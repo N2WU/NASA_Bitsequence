@@ -95,12 +95,12 @@ FinalCell(:,2) = cellstr(num2str(decTime));
 
 %Operates with either a reference packet at same sequence (combined with
 %channel model) or a packet at different sequence?
-teamkey_Hex = 'EB901E1E';
+teamkey_Hex = 'XXXXXXXX';
 time_date = datetime('2020-01-01 00:00:00');
 quantityOfPackets = 50;
 
 Trusted_packet = commsProc(teamkey_Hex,time_date, quantityOfPackets);
-%commsProc('EB901E1E',datetime('2020-01-01 00:00:00'),50)
+%commsProc('XXXXXXXX',datetime('2020-01-01 00:00:00'),50)
 
 TrustedData = BitReaderFunction(Trusted_packet);
 TrustedData = TrustedData(:,1:length(TrustedData)-1);
