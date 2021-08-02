@@ -18,7 +18,7 @@ b = 1013904223;
 M = 2^32;
 
 % Define provided teamkey and convert to binary
-teamKey_Hex = 'EB901E1E';
+teamKey_Hex = 'XXXXXXXX';
 teamKey_dec = hex2dec(teamKey_Hex);
 teamKey_bin = de2bi(teamKey_dec,'left-msb');
 
